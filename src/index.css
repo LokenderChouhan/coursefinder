@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #0E1B2C;
+  background-color: #FFF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.625rem;
+  line-height: 130%;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.content {
+  margin: auto;
+  max-width: 1200px;
+  padding-left: 12px;
+  padding-right: 12px;
+  /* overflow: hidden; */
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.625rem;
+  }
+  p {
+    font-weight: 350;
+  }
+  .content {
+    margin: 0 12px;
+  }
+}
+
+.header {
+  background: #6C48F0;
+  min-height: 400px;
+  width: 100%;
+  /* position: relative; */
+  clip-path: ellipse(75% 60% at 50% 40%);
+}
+
+.footer {
+  background: #0E1B2C;
+  min-height: 300px;
+  width: 100%;
+  /* position: relative; */
+  clip-path: ellipse(75% 60% at 50% 60%);
+}
